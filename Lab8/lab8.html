@@ -19,7 +19,7 @@ var animating = false;  // Set to true when an animation is in progress.
 var frameNumber = 0;  // Frame number is advanced by 1 for each frame while animating.
 
 var floor; 
-var pole1,pole2,pole3,pole4,pole5;
+var pole1,pole2,pole3,pole4,pole5,pole6,pole7,pole8,pole9;
 var pivot1,pivot2,pivot3,pivot4,pivot5,pivot6, pivot7, pivot8, pivot9, pivot10;
 var roof;
 var roof2;
@@ -53,7 +53,7 @@ function createWorld() {
     
     //------------------- Create the scene's visible objects ----------------------
 	floor =  new THREE.Mesh(
-             new THREE.CylinderGeometry(13.5,13.5,0.6,5,1),
+             new THREE.CylinderGeometry(13.5,13.5,0.6,9,1),
              new THREE.MeshPhongMaterial({
                color: 0x441c84,
                specular: 0x222222,
@@ -224,7 +224,7 @@ function createWorld() {
     var box3 = new THREE.Box3().setFromObject(pole3);
     var box4 = new THREE.Box3().setFromObject(pole4);
     var box5 = new THREE.Box3().setFromObject(pole5);
-
+    //var box6 = new THREE.Box3().setFromObject(pole6);
 
  
     box1.center( pole1.position );
